@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Monoton|Teko&display=swap');
+:root {
+  /* COLOURS: */
+  --navback: rgb(245, 246, 248);
+  --background: #C2D3CD;
+  --background2: #EDE3E4;
+  --buttons: #D8D8D8 ;
+  --footer: #373F51;
+  --cartitle: #C20114;
+  --topbar: #FFFFFF;
+
+  /* FONTS: */
+  --serif: 'DM Serif Display', georgia, serif;
+  --sans: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+body{
+  background-color: var(--background2);
+  font: 1em helvetica, sans-serif;
+ 
+}
+
+fieldset{
+  font-family: Teko;
+  font-size: 1.5em;
+  background-color: var(--navback);
+  margin: 1em;
+}
+
+.weblogo{
+  background-color: var(--topbar);
+  display: grid;
+  grid-template-columns:  auto auto ;
+  grid-template-areas:  "title menu ";
+  grid-column-gap: 2em;
+  max-width: 100%;
+
+}
+
+.parent-div{
+  width: 960px;
+  border:20px;
+  margin: 0 auto;
+  background-color:white;
+}
+
+.child-div{
+  width:500px;
+  border: 20px;
+  margin: 0px auto;
+  padding: 0.5em;
+  background-color: #C20114;
+}
+
+
+button{
+  background-color: transparent;
+  margin: 1em;
+  font-family: Teko;
+ 
+}
+
+.carart img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+.navbtn{
+  display: none;
+}
+
+
+.copyright{
+  font-family: Teko;
+  background-color: var(--footer);
+  font-size: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Teko;
+  
+}
+
+h2{
+  font-family: Teko;
+  font-display: bold;
+  font-size: 2em;
+  margin:0em;
+  }
+
+.title{
+  font-family: Lobster;
+  font-size: 4em;
+  text-align: left;
+  background-color: var(--topbar);
+ 
+}
+
+.list{
+  font-family: Teko;
+  font-display: bold;
+  font-style: italic;
+  font-size: 2em;
+  margin:0.5em;
+  
+  }
+
+
+  h4{
+    background-color: var(--cartitle);
+    font-family: Teko;
+    font-style: initial;
+    font-display: bold;
+    font-size: 4em;
+    margin: 0.2em;
+    
+  }
+
+  .text{
+    font-family: Teko;
+    font-display: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    margin: 0.5em;
+  }
+
+  span{
+    font-family: Teko;
+    
+    font-size: 2em;
+    background-color: var(--navback);
+    margin: 0.5em;
+  }
+  .icon{
+    margin: 1em;
+  }
+
+  .mainmenu{
+    font-size: 1.5em;
+  
+    grid-row-gap: 10px;
+  }
+
+  .home{
+    background-color: #C20114;
+  }
+
+
+
+  footer{
+    font-family: Teko;
+   
+    font-size: 1.5em;
+  }
+
+
+  @media screen and (max-width:800px){
+
+    .mainmenu{
+      display: none;
+    }
+   .title{
+     font-size: 2em;
+   }
+   .weblogo{
+     display: grid;
+     grid-template-columns: 1fr 4em;
+     grid-template-areas: "title"  "navbtn";
+     
+   }
+  
+   .navbtn{
+     display: block;
+     background-color: #C20114;
+   }
+  
+   button{
+     background-color: #C20114;
+   }
+  
+   .parent-div{
+    width: 92%;
+  border:20px;
+  margin: 20px ;
+  background-color:none;
+  }
+  
+  .child-div{
+    width:92%;
+    align-self: center;
+    border: 20px;
+    margin: 20px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  h4{
+    font-size:2em;
+  }
+
+  
+  }
+
+  @media screen and (max-width:400px){
+
+  .list{
+    font-size:2em;
+  }
+  span{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  }

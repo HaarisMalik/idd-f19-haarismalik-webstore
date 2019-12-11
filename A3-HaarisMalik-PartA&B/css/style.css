@@ -1,0 +1,277 @@
+ /* @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Open+Sans:400,400i,700,700i&display=swap'); */
+
+/*@import url('https://fonts.googleapis.com/css?family=Monoton|Teko&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Monoton|Teko&display=swap');
+:root {
+  /* COLOURS: */
+  --navback: rgb(245, 246, 248);
+  --background: #C2D3CD;
+  --background2: #EDE3E4;
+  --buttons: #D8D8D8 ;
+  --footer: #373F51;
+  --cartitle: #C20114;
+  --topbar: #FFFFFF;
+
+  /* FONTS: */
+  --serif: 'DM Serif Display', georgia, serif;
+  --sans: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+body{
+  background-color: var(--background2);
+  font: 1em helvetica, sans-serif;
+  
+}
+
+
+
+
+button{
+  background-color: transparent;
+  margin: 1em;
+  font-family: Teko;
+ 
+}
+
+fieldset{
+  font-family: Teko;
+  font-size: 1.5em;
+  background-color: var(--navback);
+  margin: 1em;
+}
+
+
+
+h1{
+  font-family: Teko;
+  font-display: bold;
+  font-size: 4em;
+ 
+ 
+
+
+
+}
+
+h2{
+font-family: Teko;
+font-display: bold;
+font-size: 2em;
+margin:1em;
+text-decoration-line: underline;
+}
+
+h3{
+  font-family: Teko;
+  font-display: bold;
+  font-size: 1.5em;
+}
+
+h4{
+  background-color: var(--cartitle);
+  font-family: Teko;
+  font-style: initial;
+  font-display: bold;
+  font-size: 2em;
+  justify-items: center;
+  
+  
+}
+.text{
+  font-family: Teko;
+  font-display: bold;
+  font-style: italic;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+span{
+  font-family: Teko;
+  
+  font-size: 2em;
+  background-color: var(--navback);
+  margin: 0.5em;
+}
+.list{
+font-family: Teko;
+font-display: bold;
+font-style: italic;
+font-size: 2em;
+margin:0.5em;
+
+}
+
+.picture-grid{
+  
+  display: grid;
+ 
+  grid-template-columns:  1fr 1fr 1fr ;
+  grid-template-areas:  "one two thr";
+  justify-items: left ;
+  grid-gap: 0px;
+  grid-row-gap: 0px;
+  
+ 
+}
+.one{
+  
+  max-width: 400px; 
+  
+}
+
+.two{
+    max-width: 400px;
+    
+}
+
+.thr{
+  max-width: 400px; 
+  
+}
+
+.home{
+  background-color: #C20114;
+}
+.icon{
+  margin: 1em;
+}
+.navbtn{
+  display: none;
+}
+.menu{
+  margin: 1em;
+}
+.mainmenu{
+  font-size: 1.5em;
+}
+
+
+img{
+  margin: 1em;
+}
+
+
+.copyright{
+  font-family: Teko;
+  background-color: var(--footer);
+  font-size: 1em;
+}
+.weblogo{
+  background-color: var(--topbar);
+  display: grid;
+  grid-template-columns:  auto auto ;
+  grid-template-areas:  "title menu ";
+  grid-column-gap: 2em;
+  max-width: 100%;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Teko;
+  
+}
+
+.title{
+  font-family: Lobster;
+  font-size: 4em;
+  text-align: left;
+  background-color: var(--topbar);
+ 
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+  .mainmenu{
+    display: none;
+  }
+ .title{
+   font-size: 2em;
+ }
+ .weblogo{
+   display: grid;
+   grid-template-columns: 1fr 4em;
+   grid-template-areas: "title"  "navbtn";
+   
+ }
+
+ .navbtn{
+   display: block;
+   background-color: #C20114;
+ }
+
+ button{
+   background-color: #C20114;
+ }
+
+ .picture-grid{
+  
+  display: grid;
+ 
+  grid-template-columns:  1fr  1fr 1fr ;
+  grid-template-areas: "one" "two thr fou";
+  justify-items: left ;
+  grid-gap: 1px;
+  grid-row-gap: 0px;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+ 
+}
+
+}
+
+
+
+
+.car-category{
+  background-color:  var(--background2);
+  list-style: none;
+  border: thin solid black;
+  width: 140px;
+}
+
+.car-links{
+  color: var(--background2);
+}
+
+
+.cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-gap: 1em;
+  margin-top: 2em;
+}
+
+.category{
+  font-family: Teko;
+  font-size: 1.5em;
+  background-color: var(--navback);
+  margin: 1em;
+}
+
+.seller{
+
+  font-family: Teko;
+  font-size: 1.5em;
+}
+
+.price{
+  font-family: Teko;
+  font-size: 1.5em;
+  text-decoration-line: underline;
+  color: purple;
+}
+
+.reviews{
+  font-family: Teko;
+  font-size: 1.5em;
+  color: green;
+}
